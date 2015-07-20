@@ -7,7 +7,7 @@ module Spree
 
     private
       def effective_amount(amount = amount)
-        -(amount)
+        -(amount) rescue 0.00
       end
   end
 end
